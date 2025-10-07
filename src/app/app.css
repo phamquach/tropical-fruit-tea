@@ -1,0 +1,22 @@
+.app-root {
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.app-header,
+.app-footer {
+    padding: var(--padding-1);
+}
+
+.app-header,
+.app-footer {
+    background-color: var(--bg-color-1);
+    color: var(--text-color-1);
+    position: relative;
+    z-index: 99;
+}
+
+.app-body {
+    color: var(--text-color-4);
+    height: max-content;
+}
