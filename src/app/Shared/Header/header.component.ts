@@ -33,19 +33,10 @@ export default class Header {
         }
     ]
 
-    isOpen = false;
-
-    toggleMenu() {
-        this.isOpen = !this.isOpen
-    }
-
     scrollToContacts() {
         const element = document.getElementById('contacts');
         if (element) {
             element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }
-        if (this.isOpen === true) {
-            this.isOpen = false
         }
     }
 }

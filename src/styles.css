@@ -18,7 +18,7 @@
     /* text color */
     --text-color-1: #6a6e48;
     --text-color-2: #2f2f2fbd;
-    --text-color-3: #faf19b;
+    --text-color-3: #191919d7;
     --text-color-4: #FFFFFF;
 
     /* Text hover */
@@ -33,6 +33,9 @@
 
     /* padding */
     --padding-1: 1rem 5%;
+
+    /* image-size */
+    --img-size-1: ;
 }
 
 button {

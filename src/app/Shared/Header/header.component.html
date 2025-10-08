@@ -8,15 +8,15 @@
         }
         <li><a (click)="scrollToContacts()">Contacts</a></li>
     </ul>
-    <div class="header-menu-mobile-show">
-        <button class="header-btn" (click)="toggleMenu()">{{isOpen?'✖' : '☰'}}</button>
-        <ul class="header-menu-mobile cormorant-upright-semibold" [ngStyle]="{height:isOpen?'':'0'}">
-            <br>
-            @for(item of menu; track item.id){
-            <li><a (click)="toggleMenu()" [routerLink]="item.path">{{item.name}}</a></li>
-            }
-            <li><a (click)="scrollToContacts()">Contacts</a></li>
-            <br>
-        </ul>
-    </div>
+    <button class="header-btn">
+        <div></div>
+    </button>
+    <ul class="header-menu-mobile cormorant-upright-semibold">
+        <br>
+        @for(item of menu; track item.id){
+        <li><a [routerLink]="item.path">{{item.name}}</a></li>
+        }
+        <li><a (click)="scrollToContacts()">Contacts</a></li>
+        <br>
+    </ul>
 </div>

@@ -1,7 +1,7 @@
 import { Component } from "@angular/core";
 
 @Component({
-    selector: 'menories',
+    selector: 'app-page-menories',
     templateUrl: './menories.component.html',
     styleUrl: './menories.component.css'
 })

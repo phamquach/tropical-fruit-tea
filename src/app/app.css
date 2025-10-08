@@ -5,18 +5,20 @@
 
 .app-header,
 .app-footer {
-    padding: var(--padding-1);
-}
-
-.app-header,
-.app-footer {
     background-color: var(--bg-color-1);
     color: var(--text-color-1);
     position: relative;
-    z-index: 99;
+    width: 100%;
+    z-index: 3;
+    padding: var(--padding-1);
+}
+
+.app-header {
+    position: fixed;
 }
 
 .app-body {
     color: var(--text-color-4);
     height: max-content;
+    margin-top: calc(4vw + 35px);
 }

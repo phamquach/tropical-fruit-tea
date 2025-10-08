@@ -1,4 +1,4 @@
 interface ICard {
     id: number,
-    image, name, detail: string
+    src, alt, name, description, category: string
 }
