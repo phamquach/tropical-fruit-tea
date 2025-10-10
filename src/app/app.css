@@ -9,12 +9,13 @@
     color: var(--text-color-1);
     position: relative;
     width: 100%;
-    z-index: 3;
+    z-index: 1;
     padding: var(--padding-1);
 }
 
 .app-header {
     position: fixed;
+    z-index: 3;
 }
 
 .app-body {

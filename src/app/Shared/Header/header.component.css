@@ -25,6 +25,7 @@
 
 .header-menu-desktop li a,
 .header-menu-mobile li a {
+    position: relative;
     white-space: nowrap;
     cursor: pointer;
     color: var(--text-color-2);

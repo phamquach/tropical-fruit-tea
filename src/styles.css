@@ -26,10 +26,11 @@
     --text-hover-color-2: #000000;
 
     /* font-size */
-    --font-size-1: max(35px, 4vw);
-    --font-size-2: max(25px, 2.5vw);
-    --font-size-3: max(20px, 1.8vw);
-    --font-size-4: max(15px, 1.5vw);
+    --font-size-1: max(40px, 4vw);
+    --font-size-2: max(35px, 2.5vw);
+    --font-size-3: max(30px, 1.8vw);
+    --font-size-4: max(25px, 1.5vw);
+    --font-size-5: 1rem;
 
     /* padding */
     --padding-1: 1rem 5%;
@@ -42,8 +43,11 @@ button {
     border: none;
     background: none;
     color: inherit;
+    cursor: pointer;
 }
 
+
+/* fonts */
 .cormorant-upright-light {
     font-family: "Cormorant Upright", serif;
     font-weight: 300;
@@ -79,4 +83,9 @@ button {
     font-family: "Crimson Pro", serif;
     font-weight: 100;
     font-style: normal;
+}
+
+/* animation */
+.slide-text {
+    transform: translate(0);
 }

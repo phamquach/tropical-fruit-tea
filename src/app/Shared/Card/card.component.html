@@ -1,9 +1,9 @@
 <div class="card">
-    <img class="card-img" [src]="data.src" [alt]="data.alt" />
+    <div class="card-img"><img [src]="data.src" [alt]="data.alt" />
+    </div>
     <div class="card-content cormorant-upright-semibold">
         <h2 class="card-content-title">{{data.name}}</h2>
         <p class="card-content-category cormorant-upright-light">{{data.category}}</p>
         <span class="card-content-description cormorant-upright-medium">{{data.description}}</span>
-        <button class="card-content-btn">Xem Thêm</button>
     </div>
 </div>

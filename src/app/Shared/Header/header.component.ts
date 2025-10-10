@@ -33,6 +33,7 @@ export default class Header {
         }
     ]
 
+
     scrollToContacts() {
         const element = document.getElementById('contacts');
         if (element) {

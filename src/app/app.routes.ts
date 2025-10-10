@@ -1,9 +1,6 @@
+
 import { Routes } from '@angular/router';
-import { Home } from './pages/Home/home.component';
-import { Menu } from './pages/Menu/menu.component';
 import { Error } from './pages/Error/error.component';
-import { Ingredients } from './pages/Ingredients/Ingredients.component';
-import { Menories } from './pages/Menories/menories.component';
 
 export const routes: Routes = [
     {
@@ -13,22 +10,24 @@ export const routes: Routes = [
     },
     {
         path: "home",
-        component: Home
+        loadComponent: () => import('./pages/Home/home.component').then(m => m.Home)
     },
     {
         path: 'memories',
-        component: Menories
+        loadComponent: () => import('./pages/Memories/memories.component').then(m => m.Memories)
+
     },
     {
         path: 'menu',
-        component: Menu,
+        loadComponent: () => import('./pages/Menu/menu.component').then(m => m.Menu)
     },
     {
         path: 'ingredients',
-        component: Ingredients
+        loadComponent: () => import('./pages/Ingredients/ingredients.component').then(m => m.Ingredients)
     },
     {
         path: "**",
-        component: Error
+        loadComponent: () => import('./pages/Error/error.component').then(m => m.Error)
+
     }
 ];
